@@ -18,14 +18,25 @@ class B extends A
     }
 }
 
+class C extends B
+{
+    int c;
+    void showC()
+    {
+        System.out.println(c);
+    }
+}
+
 public class InheretanceType {
     public static void main(String[] args) {
-        B bobj=new B();
+        C bobj=new C();
         bobj.a=10;
         bobj.b=20;
+        bobj.c=30;
 
         bobj.display();
         bobj.show();
+        bobj.showC();
     }
 
 }
