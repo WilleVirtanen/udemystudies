@@ -39,5 +39,6 @@ public class DataTypes
 
 		// String
 		String name = "John";
+		System.out.println(name);
     }
 }
